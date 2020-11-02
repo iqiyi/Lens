@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/lens_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="copy" />
+
+        <Button
+            android:id="@+id/lens_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="share" />
+
+        <Button
+            android:id="@+id/lens_view_on_web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="push" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/lens_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/black_051b28"
+            />
+    </ScrollView>
+
+</LinearLayout>

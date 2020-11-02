@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/search_filter_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:id="@+id/text_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:text="&lt; 日志系统筛选保存功能"
+             />
+        <TextView
+            android:id="@+id/save_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_dark"
+            android:padding="5dp"
+            android:text="保存日志"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/black"
+            android:textSize="14dp" />
+        <TextView
+            android:id="@+id/clear_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_dark"
+            android:padding="5dp"
+            android:text="清除日志"
+            android:layout_toLeftOf="@id/save_log"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/black"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/search_filter_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/lens_title_plus"
+            android:layout_centerVertical="true"
+            android:background="@android:color/holo_green_dark"/>
+
+        <EditText
+            android:id="@+id/edit_search_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/search_filter_add"
+            android:background="@android:color/white"
+            android:hint="请添加搜索项"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray" />
+    </RelativeLayout>
+
+    <com.qiyi.lens.ui.flowlayout.LensTagFlowLayout
+        android:id="@+id/search_filter_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+
+
+    <EditText
+        android:id="@+id/edit_focus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="focus position"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/next_focus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="focus next"
+        android:visibility="gone"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/log_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        android:scrollbars="vertical" />
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:id="@+id/lens_ab_test_edit_sub_panel"
+    android:layout_gravity="bottom"
+    android:background="#BBF0F8FF">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lens_panel_default_dark_color"
+        />
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="8dp"
+        android:id="@+id/lens_sub_panel_close_btn"
+        android:src="@drawable/lens_close_btn"
+        />
+    <!--separator -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/lens_panel_default_dark_color"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF0F8FF"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/lens_sub_panel_container">
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

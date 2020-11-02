@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/history_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/lens_search_history_item_bg"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:textColor="#B3333333"
+        android:singleLine="true"
+        android:maxEms="11"
+        android:ellipsize="end"
+        android:textSize="14dp"
+        android:text="text"
+        />
+  <ImageView
+      android:id="@+id/iv_delete_icon"
+      android:layout_width="22dp"
+      android:layout_height="22dp"
+      android:clickable="true"
+      android:src="@drawable/lens_close_btn"
+      android:layout_gravity="right" />
+</FrameLayout>

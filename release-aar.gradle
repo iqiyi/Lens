@@ -1,0 +1,26 @@
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+
+
+version = VERSION_NAME
+group = GROUP
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            artifactId POM_ARTIFACT_ID
+            pom.withXml{
+                def root = asNode()
+                root.appendNode('packaging', POM_PACKAGING)
+                root.appendNode('name', POM_NAME)
+                root.appendNode('description', POM_DESCRIPTION)
+            }
+        }
+    }
+
+    repositories {
+        maven {
+            url "${mavenRepoUrl}"
+        }
+    }
+}

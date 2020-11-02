@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.compileSdkVersion
+        versionCode 1
+        versionName rootProject.ext.sdkVersion
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    compileOnly "androidx.recyclerview:recyclerview:1.0.0"
+    compileOnly "androidx.legacy:legacy-support-v4:1.0.0"
+    //for network analyse
+    compileOnly "com.squareup.okhttp3:okhttp:${rootProject.ext.okhttpVersion}"
+}
+
+apply plugin: 'maven'
+
+// please config maven repo info in your global gradle.properties
+// do not upload to the git chunk
+
+version = "${sdkVersion}"
+group = GROUP
+
+uploadArchives {
+    configuration = configurations.archives
+    repositories.mavenDeployer {
+        repository(url: "${rootProject.ext.mavenRepoUrl}")
+        pom.project {
+            name POM_NAME
+            artifactId POM_ARTIFACT_ID
+            packaging POM_PACKAGING
+            description POM_DESCRIPTION
+        }
+
+        pom.whenConfigured { pom ->
+            pom.dependencies.removeAll hasProperty('DEPENDENCIES_REMOVER') ? property('DEPENDENCIES_REMOVER') : { dep ->
+                // remove project deps
+                dep.groupId == rootProject.name
+            }
+        }
+    }
+
+}

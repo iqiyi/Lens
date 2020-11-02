@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/divider_below_title"
+            style="@style/lensDivideLine" />
+
+        <!--展开方式-->
+        <RelativeLayout
+            android:id="@+id/len_open_status_container"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_lens_setting_open_status"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/lens_setting_item_bg"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:paddingLeft="12dp"
+                android:paddingEnd="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/lens_setting_open_status"
+                android:textColor="@color/phone_my_setting_text_color"
+                android:textSize="@dimen/text_size_14" />
+
+            <RadioGroup
+                android:id="@+id/lens_open_status_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lens_setting_open_status_open"
+                    android:textColor="@color/black_051b28"
+                    android:textSize="@dimen/text_size_12" />
+
+                <RadioButton
+                    android:id="@+id/radio_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lens_setting_open_status_min"
+                    android:textColor="@color/black_051b28"
+                    android:textSize="@dimen/text_size_12" />
+
+                <RadioButton
+                    android:id="@+id/radio_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lens_setting_open_status_close"
+                    android:textColor="@color/black_051b28"
+                    android:textSize="@dimen/text_size_12" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider_below_open_status"
+            style="@style/lensDivideLine"
+            android:layout_marginTop="6dp" />
+
+        <!--设备信息-->
+        <TextView
+            android:id="@+id/tv_lens_setting_device_info"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/lens_setting_item_bg"
+            android:drawableEnd="@drawable/lens_setting_switch_bg"
+            android:drawableRight="@drawable/lens_setting_switch_bg"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/lens_block_device_info_title"
+            android:textColor="@color/phone_my_setting_text_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:id="@+id/divider_below_device_info"
+            style="@style/lensDivideLine" />
+
+
+        <!--触摸日志-->
+        <TextView
+            android:id="@+id/tv_lens_setting_view_touch"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/lens_setting_item_bg"
+            android:drawableEnd="@drawable/lens_setting_switch_bg"
+            android:drawableRight="@drawable/lens_setting_switch_bg"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/lens_block_view_touch"
+            android:textColor="@color/phone_my_setting_text_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:id="@+id/divider_below_touch_log"
+            style="@style/lensDivideLine" />
+
+
+        <!--帧率信息-->
+        <TextView
+            android:id="@+id/tv_lens_setting_frame"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/lens_setting_item_bg"
+            android:drawableEnd="@drawable/lens_setting_switch_bg"
+            android:drawableRight="@drawable/lens_setting_switch_bg"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/lens_block_frame_title"
+            android:textColor="@color/phone_my_setting_text_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:id="@+id/divider_below_frame"
+            style="@style/lensDivideLine" />
+
+        <!--日志信息-->
+        <TextView
+            android:id="@+id/tv_lens_setting_log"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/lens_setting_item_bg"
+            android:drawableEnd="@drawable/lens_setting_switch_bg"
+            android:drawableRight="@drawable/lens_setting_switch_bg"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/lens_block_log_title"
+            android:textColor="@color/phone_my_setting_text_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:id="@+id/divider_below_log"
+            style="@style/lensDivideLine" />
+
+        <!--debug信息-->
+        <TextView
+            android:id="@+id/tv_lens_enable_debug"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/lens_setting_item_bg"
+            android:drawableEnd="@drawable/lens_setting_switch_bg"
+            android:drawableRight="@drawable/lens_setting_switch_bg"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/lens_block_enable_debug"
+            android:textColor="@color/phone_my_setting_text_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            style="@style/lensDivideLine" />
+
+        <!--启动分析-->
+        <TextView
+            android:id="@+id/tv_lens_setting_launch"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/lens_setting_item_bg"
+            android:drawableEnd="@drawable/lens_setting_switch_bg"
+            android:drawableRight="@drawable/lens_setting_switch_bg"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/lens_block_launch_title"
+            android:textColor="@color/phone_my_setting_text_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:id="@+id/divider_below_launch"
+            style="@style/lensDivideLine" />
+
+        <!--网络分析-->
+        <TextView
+            android:id="@+id/tv_lens_setting_network"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/lens_setting_item_bg"
+            android:drawableEnd="@drawable/lens_setting_switch_bg"
+            android:drawableRight="@drawable/lens_setting_switch_bg"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/lens_block_network_title"
+            android:textColor="@color/phone_my_setting_text_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:id="@+id/divider_below_network"
+            style="@style/lensDivideLine" />
+
+        <!--页面分析-->
+        <TextView
+            android:id="@+id/tv_lens_setting_activity"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/lens_setting_item_bg"
+            android:drawableEnd="@drawable/lens_setting_switch_bg"
+            android:drawableRight="@drawable/lens_setting_switch_bg"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/lens_block_activity_title"
+            android:textColor="@color/phone_my_setting_text_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:id="@+id/divider_below_activity"
+            style="@style/lensDivideLine" />
+
+        <!--Display-->
+        <TextView
+            android:id="@+id/tv_lens_setting_display"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/lens_setting_item_bg"
+            android:drawableEnd="@drawable/lens_setting_switch_bg"
+            android:drawableRight="@drawable/lens_setting_switch_bg"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/lens_block_display"
+            android:textColor="@color/phone_my_setting_text_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:id="@+id/divider_below_display"
+            style="@style/lensDivideLine" />
+
+        <!--Watch-->
+        <TextView
+            android:id="@+id/tv_lens_setting_watch"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/lens_setting_item_bg"
+            android:drawableEnd="@drawable/lens_setting_switch_bg"
+            android:drawableRight="@drawable/lens_setting_switch_bg"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/lens_block_watch"
+            android:textColor="@color/phone_my_setting_text_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:id="@+id/divider_below_watch"
+            style="@style/lensDivideLine" />
+
+        <!--Permission-->
+        <TextView
+            android:id="@+id/tv_lens_setting_permission"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/lens_setting_item_bg"
+            android:drawableEnd="@drawable/lens_setting_switch_bg"
+            android:drawableRight="@drawable/lens_setting_switch_bg"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/lens_block_permission_title"
+            android:textColor="@color/phone_my_setting_text_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            style="@style/lensDivideLine" />
+
+        <!--Crash-->
+        <TextView
+            android:id="@+id/tv_lens_setting_crash"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/lens_setting_item_bg"
+            android:drawableEnd="@drawable/lens_setting_switch_bg"
+            android:drawableRight="@drawable/lens_setting_switch_bg"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/lens_crash_info"
+            android:textColor="@color/phone_my_setting_text_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            style="@style/lensDivideLine" />
+
+        <!--清除数据 打开布局边界 切换系统语言-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/lens_block_shortcut"
+                android:textColor="@color/phone_my_setting_text_color" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <Button
+                    android:id="@+id/len_setting_developer_option"
+                    android:layout_width="68dp"
+                    android:layout_height="28dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/lens_shape_setting_btn"
+                    android:text="@string/lens_block_app_developer_option"
+                    android:textColor="@color/phone_my_setting_text_color"
+                    android:textSize="@dimen/text_size_10" />
+
+                <Button
+                    android:id="@+id/len_setting_app_detail"
+                    android:layout_width="68dp"
+                    android:layout_height="28dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/lens_shape_setting_btn"
+                    android:text="@string/lens_block_app_setting_detail"
+                    android:textColor="@color/phone_my_setting_text_color"
+                    android:textSize="@dimen/text_size_10" />
+
+
+                <Button
+                    android:id="@+id/len_setting_change_language"
+                    android:layout_width="68dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/lens_shape_setting_btn"
+                    android:text="@string/lens_block_app_change_language"
+                    android:textColor="@color/phone_my_setting_text_color"
+                    android:textSize="@dimen/text_size_10" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider_below_app_setting_detail"
+            style="@style/lensDivideLine" />
+
+    </LinearLayout>
+
+</ScrollView>

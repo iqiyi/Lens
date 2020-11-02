@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lens_device_panel_root"
+    >
+
+    <com.qiyi.lens.ui.widget.BreathView
+        android:id="@+id/float_control_expand"
+        android:layout_width="32dp"
+        android:layout_height="32dp"/>
+
+    <com.qiyi.lens.ui.widget.FrameAnimation
+        android:id="@+id/float_panel_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/lens_round_rect_boarder"
+        >
+
+        <RelativeLayout
+            android:id="@+id/device_util_drag_bar"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_gravity="right"
+            android:minWidth="100dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/float_control_hide"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/lens_min_icon" />
+
+            <View
+                android:id="@+id/float_control_dismiss"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/lens_close_icon" />
+        </RelativeLayout>
+    </com.qiyi.lens.ui.widget.FrameAnimation>
+</FrameLayout>

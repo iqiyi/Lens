@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/lens_save"
+            android:textSize="12sp"
+            android:textColor="@drawable/lens_sl_tab_text_color"
+            android:background="@drawable/lens_button_pressed_bg"
+            android:gravity="center"
+            android:id="@+id/lens_save"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/lens_compare"
+            android:textSize="12sp"
+            android:background="@drawable/lens_button_pressed_bg"
+            android:textColor="@drawable/lens_sl_tab_text_color"
+            android:gravity="center"
+            android:id="@+id/lens_compare"
+            />
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:id="@+id/len_launch_time_pager"
+        />
+
+    <!--    tabs to switch-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="2dp"
+        android:id="@+id/lens_time_bottom_bar"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lens_time_gap"
+            android:textSize="12sp"
+            android:textColor="@drawable/lens_sl_tab_text_color"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lens_time_stamp"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@drawable/lens_sl_tab_text_color"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lens_time_threads"
+            android:textSize="12sp"
+            android:textColor="@drawable/lens_sl_tab_text_color"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+</LinearLayout>

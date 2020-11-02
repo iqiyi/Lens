@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+  <item
+      android:id="@+id/item_copy"
+      android:orderInCategory="100"
+      android:showAsAction="always"
+      android:title="Copy"/>
+  <item
+      android:id="@+id/item_paste"
+      android:orderInCategory="100"
+      android:showAsAction="always"
+      android:title="Paste"/>
+
+</menu>

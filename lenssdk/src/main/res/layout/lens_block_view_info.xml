@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <CheckBox
+           android:id="@+id/select"
+           android:layout_width="60dp"
+           android:layout_height="wrap_content"
+           android:text="选择控件"
+           android:textSize="10sp"
+           />
+
+       <CheckBox
+           android:id="@+id/show_distance"
+           android:layout_height="wrap_content"
+           android:layout_width="60dp"
+           android:textSize="10sp"
+           android:text="相对距离"
+           />
+
+       <CheckBox
+           android:id="@+id/show_sibling"
+           android:layout_height="wrap_content"
+           android:layout_width="60dp"
+           android:textSize="10sp"
+           android:text="兄弟组件"
+           />
+
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_to_parent"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/lens_ic_arrow_up"/>
+
+        <TextView
+            android:id="@+id/currentWidget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="22dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_10"/>
+
+    </LinearLayout>
+</LinearLayout>

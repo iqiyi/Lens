@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_8">8dp</dimen>
+    <dimen name="text_size_10">10dp</dimen>
+    <dimen name="text_size_12">12dp</dimen>
+    <dimen name="text_size_13">13dp</dimen>
+    <dimen name="text_size_14">14dp</dimen>
+    <dimen name="text_size_15">15dp</dimen>
+    <dimen name="text_size_16">16dp</dimen>
+    <dimen name="text_size_20">20dp</dimen>
+    <dimen name="normal_padding">10dp</dimen>
+    <dimen name="lens_default_title_bar_height">38dp</dimen>
+</resources>

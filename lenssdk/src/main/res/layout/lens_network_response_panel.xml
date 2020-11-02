@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_f7f7f7"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#ff000000"
+        android:text="网络抓包结果"
+        android:layout_gravity="center_horizontal"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black_051b28"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#ff000000"
+            android:text="复制"
+            android:id="@+id/network_response_copy"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#ff000000"
+            android:text="PUSH"
+            android:id="@+id/network_response_push"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#ff000000"
+            android:text="保存"
+            android:id="@+id/network_response_save"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#ff000000"
+        android:id="@+id/network_response_save_path"
+        android:padding="20dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="14sp"
+        android:textColor="#ff000000"
+        android:id="@+id/network_response_display"
+        android:padding="20dp"
+        android:hint="请求中。。。"
+        android:scrollbars="vertical"
+        />
+
+
+</LinearLayout>

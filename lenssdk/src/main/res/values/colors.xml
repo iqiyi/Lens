@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black_051b28">#051b28</color>
+    <color name="green_2dbb55">#2dbb55</color>
+    <color name="white_f7f7f7">#F7F7F7</color>
+    <color name="recycler_view_bg">#EFEFF3</color>
+    <color name="lens_divider_light">#fff5f5f5</color>
+    <color name="db_label_dark">#FF444444</color>
+    <color name="lens_label">#6D6D72</color>
+    <color name="lens_item_key">#FbFbFb</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="phone_my_setting_text_color">#333333</color>
+    <color name="green">#ff228B22</color>
+    <color name="black">#ff000000</color>
+    <color name="divider">#ffcccccc</color>
+
+    <color name="test1">#305ff906</color>
+    <color name="test2">#30f7b205</color>
+    <color name="test3">#30fa4103</color>
+    <color name="test4">#3013b1b4</color>
+    <color name="test5">#300528ec</color>
+    <color name="test6">#30f903e4</color>
+    <color name="common_title_bar_bg">#CFCFD1</color>
+    <color name="lens_panel_default_color_light">#fff8f8f8</color>
+    <color name="lens_panel_default_dark_color">#FFEEE9E9</color>
+
+</resources>

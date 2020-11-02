@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="120dp"
+        android:gravity="left|center_vertical"
+        android:text="@string/lens_block_permission_title"
+        android:textColor="@color/black_051b28"
+        android:textSize="@dimen/text_size_14"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lens_round_rect_light"
+        android:id="@+id/permission_more"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/tv_permission_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_051b28"
+            android:textSize="@dimen/text_size_12" />
+
+        <Button
+
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/lens_right_arrow" />
+    </RelativeLayout>
+
+    <View style="@style/lensBasePanelDivider" />
+</LinearLayout>

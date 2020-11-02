@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="4dp"
+    android:orientation="vertical">
+
+    <com.qiyi.lens.ui.traceview.compare.LaunchTimeItemView
+        android:id="@+id/lens_compare_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.qiyi.lens.ui.traceview.compare.LaunchTimeItemView
+        android:id="@+id/lens_compare_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <FrameLayout
+        android:id="@+id/lens_expand_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:background="@color/divider"
+        android:layout_height="1px"/>
+</LinearLayout>

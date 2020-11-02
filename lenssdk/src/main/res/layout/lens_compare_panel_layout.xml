@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.qiyi.lens.ui.widget.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="对比历史启动数据"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/lens_same_only"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@+id/lens_search_box_edit_text"
+            android:layout_alignTop="@+id/lens_search_box_edit_text"
+            android:gravity="center"
+            android:text="SAME_ONLY"
+            android:textSize="10dp"
+            android:textColor="@color/lens_compare_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/lens_diff_only"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@+id/lens_search_box_edit_text"
+            android:layout_alignTop="@+id/lens_search_box_edit_text"
+            android:gravity="center"
+            android:layout_toRightOf="@id/lens_same_only"
+            android:text="DIFF_ONLY"
+            android:textColor="@color/lens_compare_filter"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/lens_search_box_edit_text"
+            android:layout_toRightOf="@id/lens_diff_only"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="输入关键字"
+            android:layout_centerVertical="true"
+            android:textSize="10dp"
+            android:background="@drawable/lens_round_rect_search" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider"/>
+
+    <ListView
+        android:id="@+id/lens_list_view"
+        android:layout_width="match_parent"
+        android:divider="@null"
+        android:layout_height="match_parent"/>
+</LinearLayout>

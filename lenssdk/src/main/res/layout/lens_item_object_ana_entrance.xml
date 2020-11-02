@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_ac_info_activity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/lens_round_rect_light"
+    android:drawableLeft="@drawable/lens_debug_thumb"
+    android:drawablePadding="8dp"
+    android:gravity="center_vertical"
+    android:padding="4dp"
+    android:textColor="@color/black_051b28"
+    android:text="Object " />
+
+

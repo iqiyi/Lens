@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/test_fragment_root"
+    >
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:name="com.qiyi.lens.demo.test.fragment.FragmentB"
+        android:id="@+id/test_fragment_b"
+        />
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/test_fragment_a"
+        android:name="com.qiyi.lens.demo.test.fragment.FragmentA"
+        />
+</LinearLayout>

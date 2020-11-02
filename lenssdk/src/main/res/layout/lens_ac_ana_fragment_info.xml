@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.qiyi.lens.ui.viewtree.ViewDraw
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="right|top"
+        android:id="@+id/lens_ac_ana_fragment_info_view"
+        android:layout_margin="4dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lens_ac_ana_fragment_info_data"
+        android:drawableLeft="@drawable/lens_debug_thumb"
+        android:layout_margin="4dp"
+        android:background="@drawable/lens_round_rect_light"
+        android:textColor="@color/black_051b28"
+        android:padding="4dp"
+        android:gravity="center_vertical"
+        android:drawablePadding="8dp"
+        />
+
+</LinearLayout>

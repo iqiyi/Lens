@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/tv_field_host"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black_051b28"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <View
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1f000000"
+        />
+
+    <TextView
+        android:id="@+id/tv_field_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <FrameLayout
+        android:id="@+id/fl_field_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1f000000"
+        />
+
+    <Button
+        android:id="@+id/btn_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="应用"
+        style="?android:attr/borderlessButtonStyle"
+        android:enabled="false"
+        />
+
+    <Button
+        android:id="@+id/btn_push"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PUSH"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+</LinearLayout>

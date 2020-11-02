@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_block_launch_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="120dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/lens_block_launch_title"
+            android:textColor="@color/black_051b28"
+            android:textSize="@dimen/text_size_14" />
+
+        <Switch
+            android:id="@+id/lens_start_analysis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="开始分析"
+            android:textColor="@color/black_051b28"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_block_launch_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:drawableRight="@drawable/lens_right_arrow"
+        android:textColor="@color/black_051b28"
+        android:background="@drawable/lens_round_rect_light"
+        android:textSize="@dimen/text_size_12" />
+
+    <View style="@style/lensBasePanelDivider" />
+</LinearLayout>

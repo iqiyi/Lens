@@ -1,0 +1,8 @@
+<paths>
+    <files-path name="my_files_path" path=""/>
+    <cache-path name="my_cache_path" path=""/>
+    <external-files-path name="my_external_files_path" path="" />
+    <external-cache-path name="my_external_cache_path" path="" />
+    <external-path name="my_external_path" path="" />
+    <root-path name="camera_photos" path=""/>
+</paths>

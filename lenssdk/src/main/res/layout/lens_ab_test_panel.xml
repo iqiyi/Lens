@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lens_ab_test_panel_list"
+        android:dividerHeight="1px"
+        />
+
+<!--    <include layout="@layout/lens_abtest_sub_panel"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="300dp"-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:id="@+id/lens_ab_test_edit_sub_panel"-->
+<!--        />-->
+
+</FrameLayout>

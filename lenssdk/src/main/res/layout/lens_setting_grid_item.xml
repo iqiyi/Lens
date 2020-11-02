@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/lens_setting_item_bg"
+    android:drawableTop="@drawable/lens_setting_switch_bg"
+    android:gravity="center"
+    android:paddingStart="12dp"
+    android:paddingLeft="12dp"
+    android:paddingEnd="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:text="@string/lens_block_watch"
+    android:textColor="@color/phone_my_setting_text_color"
+    android:textSize="@dimen/text_size_14"
+    >
+
+</TextView>

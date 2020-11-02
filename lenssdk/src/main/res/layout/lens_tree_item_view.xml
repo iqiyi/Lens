@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    >
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lens_round_rect_light"
+        android:layout_alignParentRight="true"
+        android:id="@+id/lens_tree_item_analyse"
+        android:text="分析"
+        android:layout_margin="4dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lens_round_rect_light"
+        android:layout_toLeftOf="@+id/lens_tree_item_analyse"
+        android:id="@+id/lens_tree_item_view"
+        android:text="视图"
+        android:layout_margin="4dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/lens_tree_item_view"
+        android:id="@+id/lens_tree_item_info"
+        android:padding="4dp"
+        />
+</RelativeLayout>

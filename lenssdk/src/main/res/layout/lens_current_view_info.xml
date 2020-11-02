@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.qiyi.lens.ui.viewtree.ViewDraw
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right|top"
+            android:id="@+id/lens_view_draw_id"
+            android:layout_margin="4dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lens_current_view_container"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="当前组件"
+                android:textColor="@color/black_051b28"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                style="@style/lensTitleStyle"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/lens_tree_node"
+                android:id="@+id/panel_ac_info_veiw_tree"
+                android:text="查看嵌套视图信息"
+                android:layout_margin="4dp"
+                android:background="@drawable/lens_round_rect_light"
+                android:padding="4dp"
+                android:gravity="center_vertical"
+                android:drawablePadding="8dp"
+                android:visibility="gone"
+                android:textColor="@color/black_051b28"
+                />
+
+
+
+            <TextView
+                android:id="@+id/detail_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="14dp"
+                android:textColor="@color/black_051b28"
+                />
+
+            <TextView
+                android:id="@+id/lens_onclick_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="14dp"
+                android:visibility="gone"
+                android:textColor="@color/black_051b28"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
+
+
+
+</ScrollView>

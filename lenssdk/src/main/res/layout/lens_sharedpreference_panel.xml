@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+<!--    <include layout="@layout/lens_common_title_bar_panel" />-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView
+            android:id="@+id/lens_right_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/lens_pinned_search_right_transparent" />
+
+        <EditText
+            android:id="@+id/lens_search_sp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:hint="@string/lens_search_sp_hint"
+            android:paddingLeft="16dp" />
+
+        <ImageView
+            android:id="@+id/lens_right_search_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/lens_search_icon" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/lens_search_sp_result"
+        android:textColor="@color/black_051b28"
+        android:textSize="@dimen/text_size_16" />
+
+    <ListView
+        android:id="@+id/lv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="6dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+    </LinearLayout>
+
+<!--    <include layout="@layout/lens_abtest_sub_panel"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="300dp"-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:id="@+id/lens_ab_test_edit_sub_panel"-->
+<!--        />-->
+
+</FrameLayout>

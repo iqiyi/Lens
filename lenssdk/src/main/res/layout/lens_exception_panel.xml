@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="84dp"
+      android:background="#ffffff"
+      >
+
+    <LinearLayout
+        android:id="@+id/lens_current_view_container_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+      <LinearLayout
+          android:id="@+id/lens_current_view_container"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          />
+
+      <TextView
+          android:id="@+id/detail_info"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:typeface="monospace"
+          android:layout_marginTop="20dp"
+          android:textColor="@color/black_051b28"
+          android:textSize="12dp"
+          />
+
+    </LinearLayout>
+
+  </ScrollView>
+
+  <include layout="@layout/lens_common_title_bar_panel" />
+</FrameLayout>

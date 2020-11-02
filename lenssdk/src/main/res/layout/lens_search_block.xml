@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lens_seach_box_container"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_box_action_text"
+        android:textSize="14dp"
+        android:textColor="@color/black_051b28"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@android:drawable/ic_menu_search"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:layout_centerVertical="true"
+        android:id="@+id/search_box_action_search"
+        android:layout_toLeftOf="@+id/search_box_action_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_toLeftOf="@id/search_box_action_search"
+        android:background="@drawable/lens_round_rect_search"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        
+        
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/lens_close_btn"
+            android:layout_alignParentRight="true"
+            android:id="@+id/search_box_clear_search_text"
+            android:layout_centerVertical="true"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/search_box_edit_text"
+            android:textColor="@color/black"
+            android:hint="输入关键字"
+            android:layout_centerVertical="true"
+            android:textSize="13dp"
+            android:layout_toLeftOf="@+id/search_box_clear_search_text"
+            android:background="@null"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

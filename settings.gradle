@@ -1,0 +1,9 @@
+include ':demo', ':lenssdk', ':lenssdk-no-op', ':hookplug', ':lensplug', ':hookapi', ':proguard', ':buildSrc'
+
+File baseDir = new File(rootDir, './')
+
+project(':demo').projectDir = new File(baseDir, 'demo')
+project(':lenssdk').projectDir = new File(baseDir, 'lenssdk')
+project(':lenssdk-no-op').projectDir = new File(baseDir, 'lenssdk-no-op')
+project(':hookplug').projectDir = new File(baseDir, 'hookplug')
+include ':annotation'

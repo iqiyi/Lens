@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/lens_setting_item_bg"
+    android:gravity="center"
+    android:paddingStart="12dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:text="@string/lens_block_watch"
+    android:textColor="@color/phone_my_setting_text_color"
+    android:textSize="@dimen/text_size_14"
+    >
+
+</TextView>

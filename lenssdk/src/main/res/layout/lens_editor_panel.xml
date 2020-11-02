@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/lens_common_title_bar_panel" />
+
+    <EditText
+        android:id="@+id/lens_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff"
+        android:gravity="start|top"
+        android:padding="8dp"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

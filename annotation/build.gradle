@@ -1,0 +1,26 @@
+apply plugin: 'java-library'
+apply plugin: 'maven-publish'
+apply plugin: 'maven'
+
+apply from: "../build_var.gradle"
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
+
+uploadArchives {
+    repositories.mavenDeployer {
+        configuration = configurations.default
+        repository(url: "${rootProject.ext.mavenRepoUrl}")
+
+        pom.project {
+            packaging 'jar'
+            groupId 'com.iqiyi.lens'
+            artifactId "annotation"
+            version "${rootProject.ext.annotationVersion}"
+        }
+    }
+}

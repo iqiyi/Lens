@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp">
+
+    <TextView
+        android:id="@+id/lens_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="20dp"
+        android:text="ID"
+        android:textColor="@color/black"
+        android:typeface="monospace"
+        android:gravity="right|center_vertical"
+        android:textSize="9dp" />
+
+    <TextView
+        android:id="@+id/lens_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COST"
+        android:minWidth="20dp"
+        android:typeface="monospace"
+        android:textColor="@color/black"
+        android:gravity="right"
+        android:textSize="9dp" />
+
+    <TextView
+        android:id="@+id/lens_cput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPU_T"
+        android:minWidth="20dp"
+        android:typeface="monospace"
+        android:gravity="right"
+        android:textColor="@color/green_2dbb55"
+        android:textSize="9dp" />
+
+    <TextView
+        android:id="@+id/lens_st"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ST"
+        android:minWidth="20dp"
+        android:textColor="@color/black"
+        android:typeface="monospace"
+        android:gravity="right"
+        android:textSize="9dp" />
+    <TextView
+        android:layout_marginLeft="8dp"
+        android:id="@+id/lens_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TAG"
+        android:typeface="monospace"
+        android:textColor="@color/black"
+        android:textSize="9dp" />
+</LinearLayout>
+

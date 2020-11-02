@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffFAFAFA"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="DNS 设置"
+                android:textColor="#ff000000"
+                android:textSize="18dp" />
+            
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <CheckBox
+                    android:id="@+id/dns_setting_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="测试环境"
+                    android:textColor="#ff000000"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lens_setting_switch_bg"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/dns_setting_pattern_switch"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="IP直连"
+                    android:layout_toLeftOf="@id/dns_setting_pattern_switch"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    />
+
+            </RelativeLayout>
+
+
+            <com.qiyi.lens.ui.widget.tableView.TableView
+                android:id="@+id/dns_table_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:animateLayoutChanges="true">
+
+            </com.qiyi.lens.ui.widget.tableView.TableView>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                >
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/filter_setting_checkbox"
+                android:textSize="14dp"
+                android:textColor="#ff000000"
+                android:text="启用 抓包"
+                android:layout_centerVertical="true"
+                />
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lens_setting_switch_bg"
+                android:layout_alignParentRight="true"
+                android:id="@+id/dns_setting_pattern_switch_white_list"
+                android:layout_centerVertical="true"
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="白名单"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@id/dns_setting_pattern_switch_white_list"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+
+
+            <com.qiyi.lens.ui.widget.tableView.TableView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:id="@+id/filter_table_view"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                >
+
+            </com.qiyi.lens.ui.widget.tableView.TableView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

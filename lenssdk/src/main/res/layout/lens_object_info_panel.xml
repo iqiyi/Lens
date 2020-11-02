@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:id="@+id/control_area"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:id="@+id/tv_field_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/black_051b28"
+                />
+
+            <View
+                android:id="@+id/view_add_to_watch_list"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/lens_add_to_watch_icon"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            >
+
+            <EditText
+                android:id="@+id/et_filter"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:background="@drawable/lens_round_rect_dark"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:hint="@string/lens_search_field_hint"
+                android:layout_marginRight="8dp"
+                />
+
+            <TextView
+                android:id="@+id/sw_include_inheritance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lens_setting_item_bg"
+                android:drawableEnd="@drawable/lens_setting_switch_bg"
+                android:drawableRight="@drawable/lens_setting_switch_bg"
+                android:text="@string/lens_show_all_parent_fields"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_field_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/control_area"
+        android:scrollbars="vertical"
+        />
+
+</RelativeLayout>

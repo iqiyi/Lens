@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/lens_tree_node"
+        android:id="@+id/panel_ac_info_veiw_tree"
+        android:text="查看嵌套视图信息"
+        android:layout_margin="4dp"
+        android:background="@drawable/lens_round_rect_light"
+        android:padding="4dp"
+        android:gravity="center_vertical"
+        android:drawablePadding="8dp"
+        android:textColor="@color/black_051b28"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/panel_ac_info_activity"
+        android:drawableLeft="@drawable/lens_debug_thumb"
+        android:text="查看Activity对象引用信息"
+        android:layout_margin="4dp"
+        android:background="@drawable/lens_round_rect_light"
+        android:textColor="@color/black_051b28"
+        android:padding="4dp"
+        android:gravity="center_vertical"
+        android:drawablePadding="8dp"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lens_panel_ac_max_tree_level"
+                android:drawableLeft="@drawable/lens_ac_tree_deep"
+                android:text="查看最深视图层级"
+                android:layout_margin="4dp"
+                android:background="@drawable/lens_round_rect_light"
+                android:textColor="@color/black_051b28"
+                android:padding="4dp"
+                android:gravity="center_vertical"
+                android:drawablePadding="8dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/lens_ac_cate"
+                android:id="@+id/panel_ac_info_veiw_types"
+                android:text="查看视图分类信息"
+                android:layout_margin="4dp"
+                android:background="@drawable/lens_round_rect_light"
+                android:padding="4dp"
+                android:gravity="center_vertical"
+                android:drawablePadding="8dp"
+                android:visibility="gone"
+                android:textColor="@color/black_051b28"
+                />
+
+            <TextView
+                style="@style/lensPanelContentText"
+                android:id="@+id/panel_ac_info_tv1"
+                />
+
+            <com.qiyi.lens.ui.widget.tableView.TableView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/panel_ac_info_table"
+                android:layout_gravity="center_horizontal"
+                >
+
+            </com.qiyi.lens.ui.widget.tableView.TableView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

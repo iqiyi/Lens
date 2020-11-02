@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="lens_debug_info_tag" />
+    <item type="id" name="lens_debug_info_tag_text_color" />
+    <!--click event's tag-->
+    <item name="db_recycler_adapter_id" type="id"/>
+    <item name="lens_compare_detail_panel" type="id"/>
+    <item name="lens_select_view_panel_root" type="id"/>
+</resources>

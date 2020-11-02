@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/lens_setting_switch_new_disabled" android:state_enabled="false" />
+    <item android:drawable="@drawable/lens_setting_switch_selected_new" android:state_enabled="true" android:state_activated="true" />
+    <item android:drawable="@drawable/lens_setting_switch_new" android:state_enabled="true" android:state_activated="false" />
+    <item android:drawable="@drawable/lens_setting_switch_new" />
+
+</selector>

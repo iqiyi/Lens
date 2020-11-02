@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="84dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/common_title_bar_bg"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingTop="14dp"
+    android:paddingRight="12dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <Button
+            android:id="@+id/len_title_bar_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/len_common_close" />
+
+        <TextView
+            android:id="@+id/len_title_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@id/len_title_bar_back"
+            android:textSize="@dimen/text_size_16" />
+
+        <Button
+            android:id="@+id/len_title_bar_help"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:layout_toLeftOf="@+id/len_title_bar_more_layout"
+            android:background="@null"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@id/len_title_bar_more_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/len_title_bar_more"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/len_common_more"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/len_title_bar_operation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lens_common_title_bar_save"
+                android:textSize="@dimen/text_size_16"
+                tools:visibility="visible"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

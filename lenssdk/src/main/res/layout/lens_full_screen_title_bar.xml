@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/lens_default_title_bar_height"
+    android:background="@color/white"
+    >
+
+    <ImageButton
+        android:id="@+id/lens_title_back"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:background="@drawable/lens_title_bar_back" />
+
+    <TextView
+        android:id="@+id/lens_title_info"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/lens_title_back"
+        android:text="@string/lens_title_bar_title"
+        android:textColor="@color/black_051b28"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_size_20" />
+
+
+    <TextView
+        android:id="@+id/lens_title_meta_info"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black_051b28"
+        android:textSize="@dimen/text_size_20" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_f7f7f7"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

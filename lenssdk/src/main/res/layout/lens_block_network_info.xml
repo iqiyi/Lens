@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/block_network_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="120dp"
+            android:gravity="center"
+            android:text="@string/lens_block_network_title"
+            android:textColor="@color/black_051b28"
+            android:textSize="@dimen/text_size_14"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_network_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/lens_bg_block_log_title"
+            android:gravity="center_vertical"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="@string/lens_network_test"
+            android:textColor="@color/black_051b28"
+            android:textSize="@dimen/text_size_10" />
+
+        <Button
+            android:id="@+id/network_dns_setting"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/lens_settings" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lens_round_rect_light"
+        android:id="@+id/network_more"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/tv_dns_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_051b28"
+            android:textSize="@dimen/text_size_12" />
+
+        <Button
+
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/lens_right_arrow" />
+    </RelativeLayout>
+
+    <View style="@style/lensBasePanelDivider" />
+</LinearLayout>
